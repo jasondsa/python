@@ -1,0 +1,17 @@
+def chkPh():
+    ''' Program to identify ph value.
+        Condition: Acidic
+        if ph > 7.0 , Basic if ph <7.0, Neutral if ph ==0.
+        Ph value cannot be negative.
+        input ph value --> acidic, basic or neutral'''
+    ph = float(input("Enter PH value : "))
+    if ph < 7.0 and ph >0 :
+        print(ph, "Acidic ")
+    elif ph > 7.0 and ph <=14:
+        print (ph, "Basic ")
+    elif ph == 7.0:
+        print(ph, " Neutral ")
+    else :
+        print("Wrong input ! ph value should be in range 0 to 14. Try Again")
+        chkPh()
+chkPh()
